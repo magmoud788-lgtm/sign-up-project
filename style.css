@@ -7,6 +7,7 @@
 }
 body {
     display: flex;
+    height: 130vh;
 }
 
 @font-face {
@@ -188,4 +189,23 @@ button:hover {
 
 .a-log-in:active {
     color: darkgreen;
+}
+
+.image-side {
+    position: relative; /* This makes the container the anchor */
+    display: inline-block; /* Wraps tightly around the image */
+}
+
+.photo-credit {
+    position: absolute; /* Moves the text relative to the image */
+    bottom: 10px;       /* Distance from the bottom */
+    right: 0;       /* Distance from the right */
+    background: rgba(255, 255, 255, 0.5); /* Semi-transparent black background */
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.photo-credit a {
+    color: white;       /* Contrast against the dark background */
+    text-decoration: none;
 }
