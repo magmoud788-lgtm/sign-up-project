@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="image-side">
+        <div class="inside-image-side">
+            <img src="odin.png" class="odin-logo"><span>ODIN</span>
+        </div>
+    </div>
+
+    <div class="content-side">
+    <header class="header-container">
+   <p class="p-1">This is not a real online service! You know you need something
+    like this in your life to help you realize your deepest dreams.
+    <em>Sign up now to get started.</em>
+   
+   </p>
+   <p class="p-2">  You know you want to.</p>
+    </header>
+
+    
+        <form>
+            <fieldset class="fieldset">
+                <h2>Let's do this!</h2>
+
+                <div class="form-container">
+                    <div class="form-smaller-container">
+                    <label for="firstname">FIRST NAME</label>
+                    <input type="text" id="firstname" name="firstname" minlength="3" maxlength="10" placeholder="Johnson" rquired>
+                </div>
+
+                <div class="form-smaller-container">
+                    <label for="lastname">LAST NAME</label>
+                    <input type="text" id="lastname" name="lastname" minlength="3" maxlength="12" placeholder="Company">
+                </div>
+            </div>
+
+                <div class="form-container">
+                    <div class="form-smaller-container">
+                    <label for="email">EMAIL</label>
+                    <input type="email" id="email" name="email" placeholder="you@example.com" required />
+            </div>
+                    <div class="form-smaller-container">
+                    <label for="tel">PHONE NUMBER</label>
+                    <input type="tel" id="tel" name="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder=" 987-875-9432" title="pls enter correct form, example: +986 987 875 432">
+            </div>
+            </div>
+
+            <div class="form-container">
+                <div class="form-smaller-container">
+                    <label for="password">PASSWORD</label>
+                    <input type="password" id="password" name="password" pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9]).{8,}" min='8' max="20" title="Password must contain at least 8 characters, including one uppercase letter, one lowercase letter, and one number."  placeholder="Areyouready1"
+  required />
+                </div>
+
+                <div class="form-smaller-container">
+                    <label for="passwordConfirm">CONFIRM PASSWORD</label>
+                    <input type="password" id="passwordConfirm" name="passwordConfirm" pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9]).{8,}" min='8' max="20" title="Password must contain at least 8 characters, including one uppercase letter, one lowercase letter, and one number." placeholder="Areyouready1" required />
+                </div>
+            </div>
+            </fieldset>
+
+            <button>Create Account</button>
+            <div class="log-account-container">
+            <div class="have account">Already have an account?</div>
+                <div class='log-in'><a class="a-log-in" href='https://unsplash.com/photos/a-black-sports-car-parked-in-front-of-a-garage-YHABA7hV22g'>Log in</a></div>
+        </div>
+        </form>
+</body>
+</html>
